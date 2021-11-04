@@ -1,0 +1,275 @@
+/* ****** */
+/* Header */
+/* ****** */ 
+body {
+  background-color: whitesmoke;
+  margin: 0 auto;
+}
+
+.header-class {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.div-img {
+  max-width: 120px;
+}
+
+.header-color {
+  background-color: #ff2643;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* ********** */
+/* Navigation */
+/* ********** */
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #000000;
+  padding: 4px 25px;
+  border-radius: 12px;
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #737373;
+}
+
+
+nav ul {
+  margin-left: auto;
+  margin-top: 15px;
+  padding: 0px;
+  list-style: none;
+  font-family: 'Teko', sans-serif;
+  font-size: 25px;
+  flex-wrap: wrap;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+/* **** */
+/* Body */
+/* **** */
+
+h1 {
+  font-size: 50px;
+  font-family: 'Teko', sans-serif;
+  padding: 0px;
+  margin: 10px 5px 5px 5px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+  font-family: 'Teko', sans-serif;
+  margin: 5px;
+  padding-bottom: 0px;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: 'Teko', sans-serif;
+  margin: 15px 0px 3px 0px;
+  padding: 0 auto;
+}
+
+.text-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 100ch;
+}
+
+.article-text {
+  font-size: 20px;
+  margin: 0px 0px 0px 0px;
+  padding: 0 auto;
+  line-height: 50px;
+}
+
+.article-list {
+  font-size: 20px;
+  margin: 0px 60px 10px 30px;
+  padding: 0 auto;
+}
+
+/* ****** */
+/* Footer */
+/* ****** */
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ff2643;
+  padding: 10px;
+  margin: 30px 0px 0px 0px;
+}
+
+.footer-text {
+  font-size: 15px;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0 auto;
+  padding: 0 auto;
+}
+
+.footer-logo {
+  width: 50px;
+  margin: 5px 20px 5px 20px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.list-style {
+  list-style: none;
+  display: inline;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ****** */
+/* Images */
+/* ****** */
+
+.article-image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 35px;
+  margin-left: 12%;
+}
+
+.grid-img {
+  max-width: 300px;
+  max-height: 400px;
+  margin: 20px 20px 0px 20px;
+  border-radius: 25px;
+}
+/* *********** */
+/* Card Layout */
+/* *********** */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  max-width: 300px;
+  background-color: #ed4e63;
+  box-shadow: 20px 20px 15px grey;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+.position {
+  font-size: 18px;
+  font-family: 'Lato', sans-serrif;
+  margin-top: 0px;
+}
+/* *********** */
+/* End Article */
+/* *********** */
+
+.list-img {
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 20px;
+}
+
+.list-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 180px 0px 220px;
+}
+
+/* ************* */
+/* Image Gallery */
+/* ************* */
+
+.gallery-img {
+  max-width: 400px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  max-width: 400px;
+  min-width: 400px;
+  margin: 0px auto 10px auto;
+}
+
+figcaption {
+  font-size: 20px;
+  font-family: 'Lato', sans-serrif;
+  margin: 10px auto 5px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.heart {
+  width: 30px;
+}
+
+figcaption a {
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 0px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+figure a:hover {
+  color: #01518e;
+}
