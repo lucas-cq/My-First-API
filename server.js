@@ -12,7 +12,7 @@ app.get('/api/cars', function(req, res) {
     res.send(cars)
   } else {
     res.status(404)
-    res.send({error: 'File Not Found'})
+    res.send({error: '404: File Not Found'})
   }
 
 })
@@ -31,7 +31,7 @@ app.get('/api/cars/:id', function(req, res) {
     res.send(galleryItem)
   } else {
     res.status(404)
-    res.send({error: 'File not found'})
+    res.send({error: '404: File Not Found'})
   }
 })
 
@@ -39,7 +39,7 @@ app.get('/api/cars/:id', function(req, res) {
 app.use(function(req, res) {
   if (req.url.startsWith('/api')) {
     res.status(404)
-    res.send({error: 'File not found'})
+    res.send({error: '404: File not found'})
   } else {
     res.status(404)
     res.send('<h1>404: File Not Found</h1>')

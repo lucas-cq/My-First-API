@@ -8,7 +8,8 @@ const carPictures = [
     pathURL: 'assets/images/full/ferrari-rear.jpg',
     linkURL: 'https://en.wikipedia.org/wiki/Ferrari',
     credit: 'Alistair Smith',
-    creditURL: 'https://unsplash.com/photos/fxliDZFt-qY'
+    creditURL: 'https://unsplash.com/photos/fxliDZFt-qY',
+    date: '2021-11-4'
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ const carPictures = [
     pathURL: 'assets/images/full/mustang-shelby.jpg',
     linkURL: 'https://en.wikipedia.org/wiki/Ford_Mustang',
     credit: 'Joey Banks',
-    creditURL: 'https://unsplash.com/photos/YApiWyp0lqo'
+    creditURL: 'https://unsplash.com/photos/YApiWyp0lqo',
+    date: '2021-11-4'
   },
   {
     id: 3,
@@ -30,7 +32,8 @@ const carPictures = [
     pathURL: 'assets/images/full/ferrari-front.jpg',
     linkURL: 'https://en.wikipedia.org/wiki/Ferrari',
     credit: 'Joshua Koblin',
-    creditURL: 'https://unsplash.com/photos/eqW1MPinEV4'
+    creditURL: 'https://unsplash.com/photos/eqW1MPinEV4',
+    date: '2021-11-4'
   },
   {
     id: 4,
@@ -41,7 +44,8 @@ const carPictures = [
     pathURL: 'assets/images/full/lamborghini.jpg',
     linkURL: 'https://en.wikipedia.org/wiki/Lamborghini',
     credit: 'Matt Antonioli',
-    creditURL: 'https://unsplash.com/photos/T_ZdgxzPS5k'
+    creditURL: 'https://unsplash.com/photos/T_ZdgxzPS5k',
+    date: '2021-11-4'
   },
   {
     id: 5,
@@ -52,7 +56,8 @@ const carPictures = [
     pathURL: 'assets/images/full/camaro.jpg',
     linkURL: 'https://en.wikipedia.org/wiki/Chevrolet_Camaro',
     credit: 'Stefan Rodriguez',
-    creditURL: 'https://unsplash.com/photos/2AovfzYV3rc'
+    creditURL: 'https://unsplash.com/photos/2AovfzYV3rc',
+    date: '2021-11-4'
   },
   {
     id: 6,
@@ -63,7 +68,8 @@ const carPictures = [
     pathURL: 'assets/images/full/bmw-m2.jpg',
     linkURL: 'https://en.wikipedia.org/wiki/bmw',
     credit: 'Tyler Clemmensen',
-    creditURL: 'https://unsplash.com/photos/wLpTPp2dzsY'
+    creditURL: 'https://unsplash.com/photos/wLpTPp2dzsY',
+    date: '2021-11-4'
   },
   {
     id: 7,
@@ -74,7 +80,8 @@ const carPictures = [
     pathURL: 'assets/images/full/mercedes.jpg',
     linkURL: 'https://en.wikipedia.org/wiki/mercedes-benz',
     credit: 'Håkon Sataøen',
-    creditURL: 'https://unsplash.com/photos/qyfco1nfMtg'
+    creditURL: 'https://unsplash.com/photos/qyfco1nfMtg',
+    date: '2021-11-4'
   },
   {
     id: 8,
@@ -85,7 +92,8 @@ const carPictures = [
     pathURL: 'assets/images/full/bmw-collection.jpg',
     linkURL: 'https://en.wikipedia.org/wiki/bmw',
     credit: 'Alex Supran',
-    creditURL: 'https://unsplash.com/photos/A53o1drQS2k'
+    creditURL: 'https://unsplash.com/photos/A53o1drQS2k',
+    date: '2021-11-4'
   },
   {
     id: 9,
@@ -96,7 +104,8 @@ const carPictures = [
     pathURL: 'assets/images/full/mclaren.jpg',
     linkURL: 'https://en.wikipedia.org/wiki/mclaren',
     credit: 'Olav Tvedt',
-    creditURL: 'https://unsplash.com/photos/6lSBynPRaAQ'
+    creditURL: 'https://unsplash.com/photos/6lSBynPRaAQ',
+    date: '2021-11-4' 
   }
 ]
 
