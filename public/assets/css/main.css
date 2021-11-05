@@ -73,20 +73,20 @@ h1 {
   font-size: 50px;
   font-family: 'Teko', sans-serif;
   padding: 0px;
-  margin: 10px 5px 5px 5px;
+  margin: 10px 5px 0px 5px;
   text-align: center;
 }
 
 h2 {
   font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 5px;
   padding-bottom: 0px;
 }
 
 h3 {
   font-size: 25px;
-  font-family: 'Teko', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 15px 0px 3px 0px;
   padding: 0 auto;
 }
@@ -324,7 +324,17 @@ figure a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 25rem;
+  margin-bottom: 10rem;
+}
+
+.article-sec, .first-head {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.article-sec, .second-head {
+  margin: 45px 0px 15px 0px;
 }
 
 code {
@@ -334,4 +344,16 @@ code {
   padding: 10px;
   border-radius: 10px;
   margin: 10px auto 10px auto;
+}
+
+.api-wrapper p {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  max-width: 60ch;
+  line-height: 50px;
+  word-spacing: 4px;
+}
+
+.api-wrapper h3 {
+  margin-top: 6rem;
 }
