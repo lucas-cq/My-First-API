@@ -1,40 +1,10 @@
-// Install modules
-const { request } = require('express')
+// Initial modules for express
+
 const express = require('express')
 const app = express()
-const mongoose = require('mongoose')
-const { stringify } = require('qs')
-const dotenv = require('dotenv').config()
+const Car = require('./models/seeds/items.js') // Fetches mongoose from models/items.js
 
-//const cars = require('./models/gallery.js')
-
-/* ******************************* */
-/* THIS WILL GO INTO MODEL FOLDER! */
-/* ******************************* */
-
-mongoose.connect(
-  process.env.MONGODB_URL,
-  { useUnifiedTopology: true, useNewUrlParser: true },
-)
-.then(() => {
-  console.log('Connected to DB...')
-})
-.catch((err) => {
-  console.log(err)
-})
-
-const gallerySchema = new mongoose.Schema({
-  id: Number,
-  title: String,
-  description: String,
-  pathURL: String,
-  linkURL: String,
-  credit: String,
-  creditURL: String,
-  date: String
-})
-
-const Car = mongoose.model('Car', gallerySchema)
+app.use(express.static('./public')) // Serves static html
 
 // Endpoint for the API
 app.get('/api/cars', async (req, res) => {
@@ -46,6 +16,7 @@ app.get('/api/cars', async (req, res) => {
   }
 })
 
+// Endpoint for a single car
 app.get('/api/cars/:id', async (req, res) => {
   try {
   const car = await Car.findOne({id: req.params.id})
@@ -58,9 +29,7 @@ app.get('/api/cars/:id', async (req, res) => {
   }
 })
 
-app.use(express.static('./public'))
-
-// Handle 404 errors with middleware
+// If an api is not entered, or found it will display the 404 page
 app.use((req, res) => {
   if (req.url.startsWith('/api')) {
     res.status(404)
@@ -70,7 +39,7 @@ app.use((req, res) => {
   }
 })
 
-// Start server
+// Starts the server, nothin new
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
