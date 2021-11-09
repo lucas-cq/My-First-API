@@ -1,33 +1,12 @@
-// Initial modules for express
+// Initial modules for express & dotenv
 const dotenv = require('dotenv').config()
 const express = require('express')
 const app = express()
-const Car = require('./models/seeds/items.js') // Fetches mongoose from models/items.js
+const router = require('./routes/api')
 
-app.use(express.static('./public')) // Serves static html
+app.use(router) // Uses Routers from api.js
 
-// Endpoint for the API
-app.get('/api/cars', async (req, res) => {
-  try {
-  const cars = await Car.find()
-  res.send(cars)
-  } catch(err) {
-    res.send({error: '404 File not found'})
-  }
-})
-
-// Endpoint for a single car
-app.get('/api/cars/:id', async (req, res) => {
-  try {
-  const car = await Car.findOne({id: req.params.id})
-  if (!car) {
-    throw new Error('Car not found')
-  }
-  res.send(car)
-  } catch(err) {
-    res.send({error: '404 Car not found'})
-  }
-})
+app.use(express.static('public')) // Serves static html
 
 // If an api is not entered, or found it will display the 404 page
 app.use((req, res) => {

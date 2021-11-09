@@ -1,5 +1,4 @@
-// Initial modules for mongoose, and dotenv
-
+// Initial modules for mongoose
 const mongoose = require('mongoose')
 
 // Connects to the mongoose URL
