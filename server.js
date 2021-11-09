@@ -1,5 +1,5 @@
 // Initial modules for express
-
+const dotenv = require('dotenv').config()
 const express = require('express')
 const app = express()
 const Car = require('./models/seeds/items.js') // Fetches mongoose from models/items.js
